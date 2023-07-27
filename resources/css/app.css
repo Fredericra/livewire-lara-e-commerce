@@ -1,0 +1,102 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+	h1{
+		font-size: 32px;
+	}
+	h2{
+		font-size: 28px;
+	}
+	h3{
+		font-size: 22px;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+@layer components{
+	.grid-media{
+		@apply sm:grid grid-cols-1 md:grid grid-cols-12;
+	}
+	.btn{
+		@apply px-2 py-1 rounded;
+	}
+	.btn-full{
+		@apply rounded-full px-3 py-1;
+	}
+	.bold-white{
+		@apply font-bold text-white;
+	}
+	.bold-blue{
+		@apply font-bold text-blue-400;
+	}
+	.bold-slate{
+		@apply font-bold text-slate-400;
+	}
+	.bold-gray{
+		@apply font-bold text-gray-500;
+	}
+	.grad-amber{
+		@apply bg-gradient-to-r to-sky-300 from-amber-600;
+	}
+	.grad-violet{
+		@apply bg-gradient-to-r to-violet-300 from-sky-600;
+	}
+	.grad-sky{
+		@apply bg-gradient-to-r to-violet-600 from-yellow-600;
+	}
+	.grad-yellow{
+		@apply bg-gradient-to-l to-sky-300 from-yellow-500;
+	}
+	.grad-blue{
+		@apply bg-gradient-to-l to-blue-300 from-yellow-600;
+	}
+	.grad-sky{
+		@apply bg-gradient-to-tl from-sky-400 from-amber-400;
+	}
+	.input{
+		@apply  overflow-hidden pr-5 rounded-full indent-12 h-10 bg-gray-300 hover:bg-slate-400 border-none text-gray-600 placeholder:text-gray-600 font-bold;
+	}
+	.input1{
+		@apply  overflow-hidden px-8 rounded indent-12 h-8 bg-gray-300 hover:bg-slate-400 border-none text-gray-600 placeholder:text-gray-600 font-bold;
+	}
+	.nav{
+		@apply hover:text-blue-500;
+	}
+	.petit{
+		font-size: 10px;
+		font-weight: bolder;
+	}
+
+
+
+}
+@layer utilities{
+	.comic {
+		font-family: comic sans ms;
+	}
+	.serif{
+		font-family: sans-serif;
+	}
+	.sticky-top{
+		position: sticky;
+		top: 0;
+	}
+	.sticky-bottom{
+		position: sticky;
+		bottom: 0;
+	}
+	.smal{
+		font-size: 12px;
+	}
+	.sticky-left{
+		position: sticky;
+		bottom: 452px;
+	}
+	
+	
+
+
+}

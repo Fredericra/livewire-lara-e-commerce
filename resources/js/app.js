@@ -1,0 +1,62 @@
+
+
+import Swal from "sweetalert2";
+window.addEventListener("message",(e)=>{
+	Swal.fire({
+		title:e.detail.title,
+		timer:5000,
+		toast:e.detail.toast,
+		position:e.detail.position,
+		showConfirmButton:false,
+		timerProgressBar:true,
+	}).then((event)=>{
+		Livewire.emit("message",e.detail.email);
+	});
+});
+window.addEventListener("inscrire",(e)=>{
+	Swal.fire({
+		title:e.detail.title,
+		timer:5000,
+		toast:e.detail.toast,
+		position:e.detail.position,
+		showConfirmButton:false,
+		timerProgressBar:true,
+	}).then((event)=>{
+		Livewire.emit("inscrire",e.detail.email);
+	});
+});
+window.addEventListener("connexion",(e)=>{
+	Swal.fire({
+		title:e.detail.title,
+		timer:5000,
+		toast:e.detail.toast,
+		position:e.detail.position,
+		showConfirmButton:false,
+		timerProgressBar:true,
+	}).then((event)=>{
+		Livewire.emit("connexion",e.detail.email);
+	});
+});
+window.addEventListener("creer",(e)=>{
+	Swal.fire({
+		title:"creation success",
+		icon:"success",
+		timer:5000,
+		toast:true,
+		position:"top",
+		showConfirmButton:false,
+		timerProgressBar:true,
+	})
+});
+window.addEventListener("comment",(e)=>{
+	Swal.fire({
+		title:e.detail.title,
+		toast:true,
+		position:"top",
+		showConfirmButton:false,
+		timerProgressBar:true,
+		timer:2000,
+		refresh:false,
+	})
+});
+import './bootstrap';
